@@ -1,0 +1,117 @@
+﻿<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Changmin Seo</title>
+		<link rel="shortcut icon" href="img/head.jpg" />
+		<style type="text/css">
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+		</style>
+		<script type="text/javascript">
+var menus;
+var menufonts;
+var taglist=["Home","Education","Research Experience","Professional Experience", "Resume"];
+function init() {
+	menus=document.getElementsByClassName("menu");
+	menufonts=document.getElementsByClassName("menufont");
+}
+function submenuSet(num) {
+	menus[num].style.backgroundColor="#eeeeee";
+}
+function submenuUnset(num) {
+	menus[num].style.backgroundColor="#ffffff";
+}
+function submenuClick(num) {
+	var i;
+	for (i=0;i<5;++i) menufonts[i].innerHTML=taglist[i];
+	if (num==4) {window.location.href="cv/ChangminSeo_Resume.pdf";return;}
+	menufonts[num].innerHTML="►"+taglist[num];
+	window.location.href="#"+taglist[num];
+}
+		</script>
+	</head>
+	<body onLoad="init();">
+		<div style="position:fixed; top:0; right:70%; width:410; text-align:center;">
+			<div style="height:40px;"></div>
+			<div><img src="img/changminseo.jpg" style="position:relative; width:180px;"></div>
+			<div><font face="calibri" color="#000000"><h1>Changmin Seo</h1></font>
+			<font face="calibri" size="3" color="#000000"><b>cs3646@columbia.edu</b><br/><br/></font></div>
+			<div class="menu" style="height:50px; line-height:50px; width:100%" onmouseover="this.style.cursor='hand'" onmouseenter=submenuSet(0) onmouseleave=submenuUnset(0) onclick=submenuClick(0) ><font class="menufont" face="calibri" size="5" color="#0088CC">►Home</font></div>
+			<div class="menu" style="height:50px; line-height:50px; width:100%" onmouseover="this.style.cursor='hand'" onmouseenter=submenuSet(1) onmouseleave=submenuUnset(1) onclick=submenuClick(1)><font class="menufont" face="calibri" size="5" color="#0088CC">Education</font></div>
+			<div class="menu" style="height:50px; line-height:50px; width:100%" onmouseover="this.style.cursor='hand'" onmouseenter=submenuSet(2) onmouseleave=submenuUnset(2) onclick=submenuClick(2)><font class="menufont" face="calibri" size="5" color="#0088CC">Research Experience</font></div>
+			<div class="menu" style="height:50px; line-height:50px; width:100%" onmouseover="this.style.cursor='hand'" onmouseenter=submenuSet(3) onmouseleave=submenuUnset(3) onclick=submenuClick(3)><font class="menufont" face="calibri" size="5" color="#0088CC">Professional Experience</font></div>
+			<div class="menu" style="height:50px; line-height:50px; width:100%" onmouseover="this.style.cursor='hand'" onmouseenter=submenuSet(4) onmouseleave=submenuUnset(4) onclick=submenuClick(4)><font class="menufont" face="calibri" size="5" color="#0088CC">Resume</font></div>
+		</div>
+		<div style="position:absolute; top:0; left:30%; width:900; text-align:left;">
+			<div id="Home">
+				<font face="calibri" size="6" color="#000000"><br/>Home<br/><p></font>
+				<font face="calibri" size="4" color="#000000">I am Changmin Seo, a first year master’s student in <a href='https://www.cs.columbia.edu/'>Department of Computer Science</a> at <a href='http://www.columbia.edu/'>Columbia University</a>. I am currently studying in machine learning track and undertaking a research project with Prof. <a href='http://www.cs.columbia.edu/~feiner/'>Steven K. Feiner</a> in <a href='http://graphics.cs.columbia.edu/home/'>CGUI Lab</a>.<br/><br/>My current academic interests cover Machine Learning, Computer Vision and Human-Computer Interaction.<br/>
+				<br/><br/><br/><br/>
+			</div>
+			<div id="Education">
+				<font face="calibri" size="6" color="#000000"><br/>Education<br/><p></font>
+				<table border="0"><tr><td><img src="img/cu.png" width="200"></td><td><div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Columbia University</b><br/>
+				Master of Science in Computer Science, Machine Learning Track<br/>
+				<div style="position:absolute; top:0; text-align:right; width:700px;"><font face="calibri" size="4" color="#000000"><i>New York, NY</i><br/><i>Expected Dec 2018</i></font></div></div></td></tr></table><br/><br/>
+
+				<table border="0"><tr><td><img src="img/kaist.png" width="200"></td><td><div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Korea Advanced Institute of Science and Technology (KAIST)</b><br/>
+				B. S. Double Major in Computer Science and Technology Management<br/>
+				<b>Rank:</b> 1st out of 40 in Computer Science Department<br/>
+				<b>Awards:</b><br/>
+				KAIST <i>summa cum laude</i> Computer Science<br/>
+				KAIST Dean's List Award<br/>
+				National Science and Engineering Scholarship<br/></font>
+				<div style="position:absolute; top:0; text-align:right; width:700px;"><font face="calibri" size="4" color="#000000"><i>Daejeon, KR</i><br/><i>Feb 2016</i><br/><br/><br/><i>2016</i><br/><i>2015</i><br/><i>2014</i><br/></font></div></div></td></tr></table>
+				<br/><br/><br/><br/>
+			</div>
+			<div id="Research Experience">
+				<font face="calibri" size="6" color="#000000"><br/>Research Experience<br/><p></font>
+				<table border="0">
+				<tr><td><img src="img/machinetrainer.png" width="200"></td><td><div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Project: Machine Trainer (Training Human with Trained Machine and Vice Versa)</b><br/>
+				<i>Qualcomm Innovation Awards 2016</i><br/>
+				Changmin Seo, Taehwan Kwon<br/>
+				<font face="calibri" size="1" color="#000000"><br/></font>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Designed and developed the prototype of Machine Trainer which is an AI-personal trainer (fitness coach) estimates human pose on exercise in real-time and provide advice on the pose; the prototype consists of a set of sensors that attached to a human body, pre-trained deep neural network and a software for visualization and interaction<br/><br/></font></div></td></tr></table>
+				<br/><br/><br/><br/>
+			</div>
+			<div id="Professional Experience">
+				<font face="calibri" size="6" color="#000000"><br/>Professional Experience<br/><p></font>
+				<div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Munhwa Broadcasting Corporation (MBC)</b><br/>
+				<i>Research Assistant</i><br/>
+				<div style="position:absolute; top:0; text-align:right; width:900px;"><font face="calibri" size="4" color="#000000"><i>Seoul, KR</i><br/><i>Jun 2016 - Aug 2016</i></font></div></div></td></tr></table><br/>
+
+				<div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Kiswe Mobile</b><br/>
+				<i>Research Intern</i><br/>
+				<div style="position:absolute; top:0; text-align:right; width:900px;"><font face="calibri" size="4" color="#000000"><i>Murray Hill, NJ</i><br/><i>Jul 2015 - Aug 2015</i></font></div></div></td></tr></table><br/>
+
+				<div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Xeogen</b><br/>
+				<i>Software Engineer</i><br/>
+				<div style="position:absolute; top:0; text-align:right; width:900px;"><font face="calibri" size="4" color="#000000"><i>Seoul, KR</i><br/><i>Jan 2011 - Mar 2013</i></font></div></div></td></tr></table><br/>
+
+				<div style="position:relative; top:0;">
+				<font face="calibri" size="4" color="#000000">
+				<b>Nexon</b><br/>
+				<i>Software Engineer Intern</i>
+				<div style="position:absolute; top:0; text-align:right; width:900px;"><font face="calibri" size="4" color="#000000"><i>Seoul, KR</i><br/><i>Jun 2009 - Jul 2009</i></font></div></div></td></tr></table><br/>
+				<br/><br/><br/><br/>
+				</div>
+				<div style="text-align:center">
+        <p>Copyright © Changmin Seo 2017</p>
+    		</div>
+		</div>
+	</body>
+</html>
